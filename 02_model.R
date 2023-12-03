@@ -1,6 +1,5 @@
 # 02_model.R
-
-library(bigml)
+library(here)
 library(tidyverse)
 
 # Load .csv file from objects folder in R
@@ -10,3 +9,10 @@ dataset <- read_csv(path_in, col_names = TRUE, col_types=  cols())
 
 head(dataset)
 
+fit <- lm(Ozone ~ Wind + Temp, dataset)
+fit 
+
+# Then we save the output of this analyis again in the objects folder
+
+path_out <- here("objects","fit.rds")
+saveRDS(fit,path_out)
