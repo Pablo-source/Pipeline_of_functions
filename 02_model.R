@@ -8,6 +8,7 @@ path_in <- here("objects","dataset.csv")
 dataset <- read_csv(path_in, col_names = TRUE, col_types=  cols())
 
 head(dataset)
+names(dataset)
 
 fit <- lm(Ozone ~ Wind + Temp, dataset)
 fit 
