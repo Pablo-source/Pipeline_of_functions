@@ -17,4 +17,4 @@ hist
 path_out <- here("objects","hist.png")
 ggsave(path_out,hist)
 
-# Click on source to output plot
+# Click on source to output plot 
