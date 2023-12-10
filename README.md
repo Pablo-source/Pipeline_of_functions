@@ -1,13 +1,13 @@
 # Pipeline_of_functions
 Moving from sequence of scripts to pipeline of functions
 
-1. First step of this project we create three **individual scripts**:
+1.First step of this project we create three **individual scripts**:
 
 - 01_load_data.R
 - 02_model.R
 - 02_plot.R
 
-2. Second step, we automate slightly the scripts execution using **source() function**:
+2.Second step, we automate slightly the scripts execution using **source() function**:
 
 2.1 Saving all three scripts in a dedicated folder called R
 2.2 Using source() function to run all three scripts
@@ -16,7 +16,7 @@ Example for the first script
 dataset
 
 
-3. Third, **create a markdown report** including all outputs from the above three scripts
+3.Third, **create a markdown report** including all outputs from the above three scripts
 Then we **render markdown document when sourcing "report.R" script** this report.R script combines three individual scripts:
 rmarkdown::render()
 
