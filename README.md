@@ -15,7 +15,8 @@ Example for the first script
 source(here("R","01_load_data.R"))
 dataset
 
-3. Create a markdown report including all outputs from the above three scripts
+
+3. Third, create a markdown report including all outputs from the above three scripts
 Rendering the markdown document output as HTML called "report.html" can be automated by including this script in the "report.R" script:
 rmarkdown::render()
 
