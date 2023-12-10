@@ -1,5 +1,7 @@
 # report.R
 
+# Run this script pressing "source" button
+# 1-2. Source individual R sripts from R folder to create content for markdown report
 library(tidyverse)
 library(here)
 
@@ -12,6 +14,6 @@ fit
 source(here("R","03_plot.R"))
 hist
 
-# 1.Run this script pressing "source" button
-# 2.Then produce Markdown report pressing "Compile report" button
+# Run this script pressing "source" button
+# Then produce Markdown report pressing "Compile report" button
 # to generate an HTML reoprt as output
