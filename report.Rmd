@@ -1,0 +1,40 @@
+---
+title: "report"
+author: "PLR"
+date: "2023-12-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+```
+
+This is the Markdown version of the report.R script
+
+## 1.Ingest data
+
+First we ingest our data using the script called "01_load_data.R" we source this script.
+
+```{r ingest data, echo=TRUE}
+source(here("R","01_load_data.R"))
+dataset
+```
+
+## 2. Create model 
+
+Then we create a small regression model displaying the fitted values.
+
+```{r Create model, echo=TRUE}
+source(here("R","02_model.R"))
+fit
+```
+
+## 3. Produce a plot 
+
+Finally we create a plot to show some results from previous model
+
+```{r Create plot, echo=TRUE}
+source(here("R","03_plot.R"))
+hist
+```

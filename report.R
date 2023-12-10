@@ -1,5 +1,7 @@
 # report.R
 
+# Run this script pressing "source" button
+# 1-2. Source individual R sripts from R folder to create content for markdown report
 library(tidyverse)
 library(here)
 
@@ -12,6 +14,15 @@ fit
 source(here("R","03_plot.R"))
 hist
 
-# 1.Run this script pressing "source" button
-# 2.Then produce Markdown report pressing "Compile report" button
-# to generate an HTML reoprt as output
+# Run this script pressing "source" button
+# Then produce Markdown report pressing "Compile report" button
+# to generate an HTML report as output
+
+# 2. Now adding the render() function below we can automate the cretion of the 
+#    rendered Rmarkdown report as HTML output 
+
+# 2-2. Generate an HTML report as final output of this "report.R" script
+# Add line below to render this script in markdown
+# Markdown report combining above scripts
+
+rmarkdown::render("report.Rmd", "html_document")
