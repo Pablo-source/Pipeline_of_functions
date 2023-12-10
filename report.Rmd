@@ -7,24 +7,34 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(here)
 ```
 
-## R Markdown
+This is the Markdown version of the report.R script
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## 1.Ingest data
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+First we ingest our data using the script called "01_load_data.R" we source this script.
 
-```{r cars}
-summary(cars)
+```{r ingest data, echo=TRUE}
+source(here("R","01_load_data.R"))
+dataset
 ```
 
-## Including Plots
+## 2. Create model 
 
-You can also embed plots, for example:
+Then we create a small regression model displaying the fitted values.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r Create model, echo=TRUE}
+source(here("R","02_model.R"))
+fit
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## 3. Produce a plot 
+
+Finally we create a plot to show some results from previous model
+
+```{r Create plot, echo=TRUE}
+source(here("R","03_plot.R"))
+hist
+```
