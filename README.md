@@ -33,7 +33,7 @@ fit
 source(here("R","03_plot.R"))
 hist
 
-3.2 Now adding the render() function below we can automate the cretion of the 
+3.2 Now adding the render() function below we can automate the cretion of a Markdown report 
 - rendered Rmarkdown report as HTML output 
 - Generate an HTML report as final output of this "report.R" script
 Added line below to render this script in markdown. It is a new Markdown report combining above scripts
