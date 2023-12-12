@@ -38,3 +38,6 @@ hist
 - Generate an HTML report as final output of this "report.R" script
 Added line below to render this script in markdown. It is a new Markdown report combining above scripts
 - **rmarkdown::render("report.Rmd", "html_document")**
+
+4. Refactor previous scripts to use them within {targets} package
+Using Targets library we start build building a pipeline of function to creaete and automate our report
