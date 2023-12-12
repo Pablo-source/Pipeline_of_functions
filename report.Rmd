@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(here)
 ```
 
-This is the Markdown version of the report.R script
+Document describing initial stages of a Data Analysis project
 
 ## 1.Ingest data
 
