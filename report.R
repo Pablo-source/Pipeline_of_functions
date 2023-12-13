@@ -4,6 +4,7 @@
 # 1-2. Source individual R sripts from R folder to create content for markdown report
 library(tidyverse)
 library(here)
+library(rmarkdown)
 
 source(here("R","01_load_data.R"))
 dataset
@@ -25,4 +26,8 @@ hist
 # Add line below to render this script in markdown
 # Markdown report combining above scripts
 
-rmarkdown::render("report.Rmd", "html_document")
+# rmarkdown::render("report.Rmd", output_file = "report.html")
+#if(!dir.exists("rendered_report")){dir.create("rendered_report")}
+
+# rmarkdown::render("report.Rmd",output_dir:../rendered_report,output_file = "report.html",html_document(toc = TRUE, toc_depth = 2))
+rmarkdown::render("report.Rmd", output_file = "report.html",html_document(toc = TRUE, toc_depth = 2))

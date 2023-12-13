@@ -13,7 +13,7 @@ names(dataset)
 fit <- lm(Ozone ~ Wind + Temp, dataset)
 fit 
 
-# Then we save the output of this analyis again in the objects folder
+# Then we save the output of this analysis again in the objects folder
 
 path_out <- here("objects","fit.rds")
 saveRDS(fit,path_out)
